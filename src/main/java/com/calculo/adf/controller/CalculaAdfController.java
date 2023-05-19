@@ -11,7 +11,7 @@ public class CalculaAdfController {
     @ResponseStatus(HttpStatus.OK)
     public String getFatorAdf(@RequestParam("prazo") int prazo, @RequestParam("taxaAdf") double taxaAdf){
         double fatorAdf = getCalculoFatorAdf(prazo, taxaAdf);
-        return "Fator ADF Cálculo: " + fatorAdf;
+        return "Fator ADF: " + fatorAdf;
     }
 
     @PostMapping("/valor")
